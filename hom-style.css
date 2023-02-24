@@ -1,0 +1,78 @@
+/* home page content where all the exp list exist*/
+*{
+    font-family: sunny-spells;
+}
+.intro{
+    font-size: 5em;
+    text-align: center;
+    font-family: sunny-spells;
+    }
+    summary{
+    font-size: 5em;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    }
+    summary:hover{
+        color: white;
+        -webkit-text-stroke: 1px black;
+    }
+    .grid_box{
+        display: grid;
+        justify-content: center;
+        row-gap: 5px;
+    }
+    .grid{
+        width: 90vw;
+        border: 3px solid black;
+        border-radius: 10px;
+        display: grid;
+        padding: 15px;
+        grid-template-columns: 3% auto 10% 10%;
+        column-gap: 5px;
+        font-size: 2vw;
+    }
+    .grid:hover{
+    background-color: rgba(255, 255, 0, 0.534);
+    }
+    .btn{
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    font-size: 2vw;
+    }
+    .btn:hover{
+        padding: 0px;
+        font-size: 2.5vw;
+    }
+    @media screen and (max-width: 1024px) {
+        .intro{
+        font-size: 30px;
+        }
+        .text{
+        font-size: 30px;
+        }
+        .btn{
+            padding: 2px; 
+            width: fit-content;
+        }
+        .grid{
+        width: 94vw;
+        padding: 2px;
+        grid-template-columns: auto 70% auto auto;
+        column-gap: 0.5em;
+        }
+        .btn:hover{
+        padding: 3px;
+        font-size: 40px;
+        }
+    }
+    @media screen and (max-width: 833px) {
+        .grid{
+            grid-template-columns: 20% auto;
+            column-gap: 0;
+        }
+    }

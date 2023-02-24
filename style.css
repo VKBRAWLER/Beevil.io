@@ -1,0 +1,272 @@
+/*navigation bar---------------------------------------------*/
+@font-face {
+    font-family: sunny-spells;
+    src: url(./fonts/sunny-spells-font/SunnyspellsRegular-MV9ze.otf);
+}
+@font-face {
+    font-family: Gloock;
+    src: url(./fonts/Gloock/Gloock-Regular.ttf);
+}
+@font-face {
+    font-family: open-sans;
+    src: url(./fonts/open-sans/OpenSans-Regular.ttf);
+}
+:root{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: Gloock;
+    list-style-position: inside;
+}
+    *{
+margin: 0;
+padding: 0;
+}
+body{
+    background-image: url(img/yooyo.jpg);
+}
+header{
+    margin: 1em;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 100px;
+    font-size: 2em;
+    display: flex;
+    font-family: sunny-spells;
+}
+.logo{
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.nav{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+.nav li{
+    list-style: none;
+    margin: 1em 2em;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1024px) {
+    .nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav li{
+        margin: 0;
+        font-size: 35px;
+    }    
+}
+/* home page content--------------------------------*/
+.intro{
+font-size: 5em;
+text-align: center;
+}
+summary{
+font-size: 5em;
+text-align: center;
+cursor: pointer;
+color: black;
+-webkit-text-stroke: 1px white;
+}
+summary:hover{
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+.grid_box{
+    display: grid;
+    justify-content: center;
+    row-gap: 5px;
+}
+.grid{
+    width: 90vw;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 3% auto 10% 10%;
+    column-gap: 5px;
+    font-size: 2vw;
+}
+.grid:hover{
+background-color: rgba(255, 255, 0, 0.534);
+}
+.exp-list{
+    font-size: 2.2vw;
+    color: black;
+    text-decoration: none;
+}
+.exp-list:hover{
+    text-decoration: dashed;
+}
+.btn{
+background-color: yellow;
+border: 3px solid black;
+border-radius: 10px;
+text-align: center;
+padding: 8px;
+font-size: 2vw;
+}
+.btn:hover{
+    padding: 0px;
+    font-size: 2.5vw;
+}
+@media screen and (max-width: 1024px) {
+    .intro{
+    font-size: 30px;
+    }
+    .text{
+    font-size: 30px;
+    }
+    .btn{
+        padding: 2px; 
+        width: fit-content;
+    }
+    .grid{
+    width: 94vw;
+    padding: 2px;
+    grid-template-columns: auto 70% auto auto;
+    column-gap: 0.5em;
+    }
+    .btn:hover{
+    padding: 3px;
+    font-size: 40px;
+    }
+}
+@media screen and (max-width: 833px) {
+    .grid{
+        grid-template-columns: 20% auto;
+        column-gap: 0;
+    }
+}
+
+/* Experiment Theory page----------------------------------------*/
+.main{
+font-size: 25px;
+}
+.content{
+display: flex;
+margin-left: 15vw;
+}
+.navigation{
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-radius: 50px;
+padding: 5px 0;
+width: 15vw;
+display: flex;
+justify-content: center;
+list-style: none;
+position: fixed;        
+font-family: sunny-spells;
+transform: translateY(-80px);
+font-size: 2vw;
+}
+h1{
+text-align: center;
+margin-bottom: 20px;
+}
+section{
+margin-bottom: 20px;
+}
+section h2{
+font-weight: 100;
+font-family: sunny-spells;
+text-decoration: underline;
+}
+section h3{
+font-weight: bold;
+text-decoration: underline dashed;
+}
+section h4{
+font-weight: bold;
+}
+section{
+font-family: open-sans;
+font-weight: bold;
+}
+.box{
+display: flex;
+justify-content: space-evenly;
+}
+span{
+text-decoration: overline;
+}
+.image-box{
+display: inline-block;
+justify-content: space-around;
+font-size: 18px;
+border: 2px solid black;
+padding: 0px;
+text-align: center;
+width: 350px;
+height: fit-content;
+margin: 9px;
+}
+.image-box img{
+width: inherit;
+}
+.sim li{
+margin: 15px 0;
+font-size: 20px;
+}
+.icon{
+height: 35px;
+}
+.test-box{
+margin: 20px;
+padding: 1vw;
+background-color: yellow;
+text-align: center;
+min-width: fit-content;
+width: 10vw;
+height: fit-content;
+border: 2px solid black;
+border-radius: 50px;
+}
+.test-box:hover{
+padding: 20px;
+font-size: 40px;
+}
+.box2{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+.sim-box{
+margin: 20px;
+width: 180px;
+height: 40px;
+background-color: yellow;
+border: 2px solid black;
+border-radius: 50px;
+text-align: center;
+}
+@media screen and (max-width: 768px) {
+.box{
+flex-wrap: wrap;
+}
+.image-box{
+width: 250px;
+font-size: 13px;
+}
+}
+@media screen and (max-width: 1024px) {
+.content{
+    grid-template-columns: auto;
+    margin: 20px;
+}
+.navigation{
+    display: none;
+}
+h1{
+    font-size: 5vw;
+}
+main{
+    font-size: 2.8vw;
+}
+.sim-box{
+    font-size: 25px;
+}
+}
