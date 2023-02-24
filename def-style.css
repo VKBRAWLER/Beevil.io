@@ -1,15 +1,15 @@
 /* default style used in every page*/
 @font-face {
     font-family: sunny-spells;
-    src: url(/fonts/sunny-spells-font/SunnyspellsRegular-MV9ze.otf);
+    src: url(./fonts/sunny-spells-font/SunnyspellsRegular-MV9ze.otf);
 }
 @font-face {
     font-family: Gloock;
-    src: url(/fonts/Gloock/Gloock-Regular.ttf);
+    src: url(./fonts/Gloock/Gloock-Regular.ttf);
 }
 @font-face {
     font-family: open-sans;
-    src: url(/fonts/open-sans/OpenSans-Regular.ttf);
+    src: url(./fonts/open-sans/OpenSans-Regular.ttf);
 }
 :root{
     font-size: 10px;
