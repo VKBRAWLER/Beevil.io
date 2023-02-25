@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/beevil.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/beevil.ico" type="image/x-icon">
     <title>Verification and interpretation of truth table for AND, OR, NOT, NAND, NOR, Ex-OR, Ex-NOR gates.</title>
     <link rel="stylesheet" href="./def-style.css">
     <link rel="stylesheet" href="./nav-style.css">
@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-        <img id="logo" class="logo" src="img/logo.png" alt="N-F">
+        <img id="logo" class="logo" src="./img/logo.png" alt="N-F">
         <ul class="nav">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">LIST</a></li>
-            <li><a href="/">CONTACT</a></li>
-            <li><a href="/">TOPIC</a></li>
+            <li><a href="./">HOME</a></li>
+            <li><a href="./">LIST</a></li>
+            <li><a href="./">CONTACT</a></li>
+            <li><a href="./">TOPIC</a></li>
         </ul>
     </header>
     <main class="main">
@@ -52,7 +52,7 @@
                 </section>
                 <section id="Theory" class="THEORY text" >
                     <h2>THEORY</h2>
-                    <h4>Introduction:</h4>
+                    <h3>Introduction:</h3>
                     <p>Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as</p>
                     <ol class="list">
                         <li>AND gate</li>
@@ -62,24 +62,24 @@
                         <li>NOR gate</li>
                         <li>Ex-OR gate</li>
                         <li>Ex-NOR gate</li>
-                    </ol><br>
-                    <h3 id="AND">1) AND gate</h4>
+                    </ol>
+                    <h3 id="AND">1) AND gate</h3>
                         <p>The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high. A dot (.) is used to show the AND operation i.e. A.B or can be written as AB</p>
                         <div class="box">
                             <div class="image-box">
                             <p>Y= A.B</p>
-                            <img src="img/e1/fig.png" alt="NP">
+                            <img src="./img/e1/fig.png" alt="NP">
                                 <p>Figure-1:Logic Symbol of AND Gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig02.png" alt="NP">
+                                <img src="./img/e1/fig02.png" alt="NP">
                                 <p>Figure-2:Truth Table of AND Gate</p>
                             </div>
                         </div>
                         <div class="box">
                             <p>A simple 2-input logic AND gate can be constructed using RTL (Resistor-Transistor-Logic) switches connected together as shown below with the inputs connected directly to the transistor bases. Both transistors must be saturated “ON” for an output at Q.</p>
                             <div class="image-box">
-                                <img src="img/e1/fig03.png" alt="NP">
+                                <img src="./img/e1/fig03.png" alt="NP">
                                     <p>Figure-3:AND Gate through RTL logic</p>
                                 </div>
                         </div>
@@ -88,20 +88,20 @@
                         <div class="box">
                             <div class="image-box">
                             <p>Y= A+B</p>
-                            <img src="img/e1/fig04.png" alt="NP">
+                            <img src="./img/e1/fig04.png" alt="NP">
                                 <p>Figure-4:Logic Symbol of OR Gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig05.png" alt="NP">
+                                <img src="./img/e1/fig05.png" alt="NP">
                                 <p>Figure-5:Truth Table of OR Gate</p>
                             </div>
                         </div>
-                        <p>OR gate can be realized by DRL (Diode-Resistance-Logic) or by TTL (Transistor-Transistor-Logic). Presently, we will learn how to implement the OR gate using DRL (Diode-Resistance-Logic). To realise OR gate, we will use a diode at every input of the OR gate. The anode part of diode is connected with input while the cathode part is joined together and a resistor, connected with the cathode is grounded. In this case, we have taken two inputs which can be seen in the circuit below.</p><br>
+                        <p>OR gate can be realized by DRL (Diode-Resistance-Logic) or by TTL (Transistor-Transistor-Logic). Presently, we will learn how to implement the OR gate using DRL (Diode-Resistance-Logic). To realise OR gate, we will use a diode at every input of the OR gate. The anode part of diode is connected with input while the cathode part is joined together and a resistor, connected with the cathode is grounded. In this case, we have taken two inputs which can be seen in the circuit below.</p>
                         <div class="box">
                             <p>When both the inputs are at logic 0 or low state then the diodes D1 and D2 become reverse biased. Since the anode terminal of diode is at lower voltage level than the cathode terminal, so diode will act as open circuit so there is no voltage across resistor and hence output voltage is same as ground. When either of the diodes is at logic 1 or high state then the diode corresponding to that input is forward bias. Since this time anode is at high voltage than cathode therefore current will flow through forward biased diode and this current then appears on resistor causing high voltage at output terminal also. Hence at output we get high or logic 1 or +5V. So, if any or both inputs are high, the output will be high or “1”.</p>
                             <div class="image-box">
                                 <p>Diode OR Gate</p>
-                                <img src="img/e1/fig06.png" alt="NP">
+                                <img src="./img/e1/fig06.png" alt="NP">
                                     <p>Figure-6:OR Gate through DRL logic</p>
                                 </div>
                         </div>
@@ -110,11 +110,11 @@
                         <div class="box">
                             <div class="image-box">
                             <p>Y= A'</p>
-                            <img src="img/e1/fig07.png" alt="NP">
+                            <img src="./img/e1/fig07.png" alt="NP">
                                 <p>Figure-7:Logic Symbol of NOT Gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig08.png" alt="NP">
+                                <img src="./img/e1/fig08.png" alt="NP">
                                 <p>Figure-8:Truth Table of NOT Gate</p>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                             <p>NOT gate can be realized through transistor.The input is connected through resistor R2 to the transistor&#180;s base. When no voltage is present on the input, the transistor turns off. When the transistor is off, no current flows through the collector-emitter path. Thus, current from the supply voltage (Vcc) flows through resistor R1 to the output. In this way, the circuit&#180;s output is high when its input is low.<br><br>In this way, the output is high when the input is low and low when the input is high.</p>
                             <div class="image-box">
                                 <p>Diode OR Gate</p>
-                                <img src="img/e1/fig09.png" alt="NP">
+                                <img src="./img/e1/fig09.png" alt="NP">
                                     <p>Figure-9:NOT Gate through Transistor</p>
                                 </div>
                         </div>
@@ -131,18 +131,18 @@
                         <div class="box">
                             <div class="image-box">
                             <p style="padding-top: 5px;">Y= <span>AB</span></p>
-                            <img src="img/e1/fig10.png" alt="NP">
-                                <p>Figure-7:Logic Symbol of NOT Gate</p>
+                            <img src="./img/e1/fig10.png" alt="NP">
+                                <p>Figure-10:Logic Symbol of NAND Gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig08.png" alt="NP">
-                                <p>Figure-8:Truth Table of NOT Gate</p>
+                                <img src="./img/e1/fig11.png" alt="NP">
+                                <p>Figure-11:Truth Table of NAND Gate</p>
                             </div>
                         </div>
                         <div class="box">
                             <p>A simple 2-input logic NAND gate can be constructed using RTL (Resistor-transistor-logic) switches connected together as shown below with the inputs connected directly to the transistor bases. Either transistor must be cut-off or “OFF” for an output at Q.</p>
                             <div class="image-box">
-                                <img src="img/e1/fig12.png" alt="NP">
+                                <img src="./img/e1/fig12.png" alt="NP">
                                     <p>Figure-12:NAND gate through RTL Logic.</p>
                                 </div>
                         </div>
@@ -151,18 +151,18 @@
                         <div class="box">
                             <div class="image-box">
                             <p style="padding-top: 5px;">Y= <span>A+B</span></p>
-                            <img src="img/e1/fig13.png" alt="NP">
+                            <img src="./img/e1/fig13.png" alt="NP">
                                 <p>Figure-13:Logic Symbol of NOR gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig08.png" alt="NP">
+                                <img src="./img/e1/fig14.png" alt="NP">
                                 <p>Figure-14:Truth Table of NOR gate</p>
                             </div>
                         </div>
                         <div class="box">
                             <p>A simple 2-input logic NOR gate can be constructed using RTL (Resistor-transistor-logic) switches connected together as shown below with the inputs connected directly to the transistor bases. Both transistors must be cut-off or “OFF” for an output at Q.</p>
                             <div class="image-box">
-                                <img src="img/e1/fig15.png" alt="NP">
+                                <img src="./img/e1/fig15.png" alt="NP">
                                     <p>Figure-15:NOR gate through RTL Logic.</p>
                                 </div>
                         </div>
@@ -171,18 +171,18 @@
                         <div class="box">
                             <div class="image-box">
                             <p>Y= A⊕B</p>
-                            <img src="img/e1/fig16.png" alt="NP">
+                            <img src="./img/e1/fig16.png" alt="NP">
                                 <p>Figure-16:Logic Symbol of Ex-OR gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig17.png" alt="NP">
+                                <img src="./img/e1/fig17.png" alt="NP">
                                 <p>Figure-17:Truth Table of Ex-OR gate</p>
                             </div>
                         </div>
                         <div class="box">
                             <p>Ex-OR gate is created from AND, NAND and OR gates.The output is high only when both the inputs are different.</p>
                             <div class="image-box">
-                                <img src="img/e1/fig18.png" alt="NP">
+                                <img src="./img/e1/fig18.png" alt="NP">
                                     <p>Figure-18:Ex-OR gate through RTL Logic.</p>
                                 </div>
                         </div>
@@ -191,142 +191,141 @@
                         <div class="box">
                             <div class="image-box">
                                 <p style="padding-top: 5px;">Y= <span>A⊕B</span></p>
-                            <img src="img/e1/fig19.png" alt="NP">
+                            <img src="./img/e1/fig19.png" alt="NP">
                                 <p>Figure-19:Logic Symbol of Ex-NOR gate</p>
                             </div>
                             <div class="image-box">
-                                <img src="img/e1/fig20.png" alt="NP">
+                                <img src="./img/e1/fig20.png" alt="NP">
                                 <p>Figure-20:Truth Table of Ex-NOR gate</p>
                             </div>
                         </div>
                         <div class="box">
                             <p>Ex-NOR gate is created from AND, NOT and OR gates.The output is high only when both the inputs are same.</p>
                             <div class="image-box">
-                                <img src="img/e1/fig21.png" alt="NP">
+                                <img src="./img/e1/fig21.png" alt="NP">
                                 <p>Figure-21:Ex-NOR gate through RTL Logic.</p>
                             </div>
                             </div>
                 </section>
                 <section id="Procedure" class="PROCEDURE text" >
                     <h2>PROCEDURE</h2>
-                    <br>
                     <h3>1)AND Gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/off battery.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/off battery.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switches for inputs "A" and "B". <br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb does not glow if any one or both the switches (2 and 3) are OFF and glows only if both the switches (2 and 3) are ON.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
                                 <li>Repeat step-2 and step-3 for all state of inputs.</li>
-                            </ol><br>
+                            </ol>
                         <h4>Simulator 2:</h4>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                     <h3>2)OR Gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/off battery.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/off battery.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switches for inputs "A" and "B". <br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb glows if any one or both the switches are ON else it won't glow.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
                                 <li>Repeat step-2 and step-3 for all state of inputs.</li>
-                            </ol><br>
+                            </ol>
                         <h4>Simulator 2:</h4>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                     <h3>3)NOT gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/off battery.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/off battery.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switch 1 to connect battery to the circuit.</li>
                                 <li>Press the switch 2 for input "A".<br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb glows if switch 2 is OFF else it won't glow.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
-                                </ol><br>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
+                                </ol>
                         <h4>Simulator 2:</h4>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                     <h3>4)NAND gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/off battery.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/off battery.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switch 1 to connect battery to the circuit.</li>
                                 <li>Press the switches 2 and 3 for inputs "A" and "B".<br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb glows if any one or both the switches are OFF else it won't glow.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
-                                </ol><br>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
+                                </ol>
                         <h4>Simulator 2:</h4>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                     <h3>5)NOR gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/off battery.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/off battery.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switch 1 to connect battery to the circuit.</li>
                                 <li>Press the switches 2 and 3 for inputs "A" and "B".<br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb glows if both the switches are OFF else it won't glow.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
-                            </ol><br>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
+                            </ol>
                         <h4>Simulator 2:</h4>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                     <h3>6)Ex-OR gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/power off.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/power off.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switches for inputs "A" and "B"..<br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb glows if one of the switches is ON and one of the switches is OFF else it won't glow.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
-                                </ol><br>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
+                                </ol>
                         <h4>Simulator 2:</h4>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                     <h3>7)Ex-NOR gate</h3>
-                        <h4>Simulator 1:
+                        <h4>Simulator 1:</h4>
                             <ol class="sim">
-                                <li>Connect the supply(+5V) <span><img class="icon" src="img/sim/power off.png" alt="NP"></span> the circuit.</li>
+                                <li>Connect the supply(+5V) <span><img class="icon" src="./img/sim/power off.png" alt="NP"></span> the circuit.</li>
                                 <li>Press the switches for inputs "A" and "B"..<br>
-                                    The switch in ON state is <span><img class="icon" src="img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="img/sim/switch off.png" alt="NP"></span></li>
+                                    The switch in ON state is <span><img class="icon" src="./img/sim/switch on.png" alt="NP"></span> and the switch in OFF state is <span><img class="icon" src="./img/sim/switch off.png" alt="NP"></span></li>
                                 <li>The bulb glows if both the switches are ON or if both the switches are OFF else it won't glow.<br>
-                                    The bulb in OFF state is <span><img class="icon" src="img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="img/sim/bulb on.png" alt="NP"></span>.</li>
-                                </ol><br>
-                        <h4>Simulator 2:</h4>
+                                    The bulb in OFF state is <span><img class="icon" src="./img/sim/bulb off.png" alt="NP"></span> and the bulb in ON state is <span><img class="icon" src="./img/sim/bulb on.png" alt="NP"></span>.</li>
+                                </ol>
+                        <h3>Simulator 2:</h3>
                             <ol class="sim">
                                 <li>Enter the Boolean input "A" and "B".</li>
                                 <li>Enter the Boolean output for your corresponding inputs.</li>
                                 <li>Click on "Check" Button to verify your output.</li>
                                 <li>Click "Print" if you want to get print out of Truth Table.</li>
-                            </ol><br>
+                            </ol>
                 </section>
                 <section id="Test" class="TEST text" >
                     <h2>TEST</h2>
