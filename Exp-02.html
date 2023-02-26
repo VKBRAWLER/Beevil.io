@@ -29,13 +29,8 @@
                 <li><a href="#Aim">Aim</a></li>
                 <li><a href="#Theory">Theory</a></li>
                 <ol style="list-style-position: inside; margin-left: 20px;">
-                    <li><a href="#AND">AND gate</a></li>
-                    <li><a href="#ORG">OR gate</a></li>
-                    <li><a href="#NOT">NOT gate</a></li>
-                    <li><a href="#NAN">NAND gate</a></li>
-                    <li><a href="#NOR">NOR gate</a></li>
-                    <li><a href="#ExO">Ex-OR gate</a></li>
-                    <li><a href="#ExN">Ex-NOR gate</a></li>
+                    <li><a href="#Half">Half Adder</a></li>
+                    <li><a href="#Full">Full Adder</a></li>
                 </ol>
                 <li><a href="#Procedure">Procedure</a></li>
                 <li><a href="#Test">Test</a></li>
@@ -47,48 +42,135 @@
             <div class="WRITE">
                 <section id="Aim" class="AIM text" >
                     <h2>AIM</h2>
-                    <p>To verify the truth table of half adder and full adder by using XOR and NAND gates respectively and analyse the working of half adder and full adder circuit with the help of LEDs in simulator 1 and verify the truth table only of half adder and full adder in simulator 2.</p>
+                    <p class="sm-para">To verify the truth table of half adder and full adder by using XOR and NAND gates respectively and analyse the working of half adder and full adder circuit with the help of LEDs in simulator 1 and verify the truth table only of half adder and full adder in simulator 2.</p>
                 </section>
                 <section id="Theory" class="THEORY text" >
                     <h2>THEORY</h2>
                     <h4>Introduction:</h4>
-                    <p>Adders are digital circuits that carry out addition of numbers. Adders are a key component of arithmetic logic unit. Adders can be constructed for most of the numerical representations like Binary Coded Decimal (BCD), Excess – 3, Gray code, Binary etc. out of these, binary addition is the most frequently performed task by most common adders. Apart from addition, adders are also used in certain digital applications like table index calculation, address decoding etc.</p>
+                    <p class="sm-para">Adders are digital circuits that carry out addition of numbers. Adders are a key component of arithmetic logic unit. Adders can be constructed for most of the numerical representations like Binary Coded Decimal (BCD), Excess – 3, Gray code, Binary etc. out of these, binary addition is the most frequently performed task by most common adders. Apart from addition, adders are also used in certain digital applications like table index calculation, address decoding etc.</p>
                     <div class="box">
-                        <p>Binary addition is similar to that of decimal addition. Some basic binary additions are shown below.</p>
+                        <p class="sm-para">Binary addition is similar to that of decimal addition. Some basic binary additions are shown below.</p>
                         <div class="image-box">
                             <img src="./img/e2/fig01.png" alt="NP">
                                 <p>Figure 1. Schematic representation of half adder</p>
                         </div>
                     </div>
-                    <h3>1)Half Adder</h3>
-                        <p>Half adder is a combinational circuit that performs simple addition of two binary numbers. If we assume A and B as the two bits whose addition is to be performed,the block diagram and a truth table for half adder with A, B as inputs and Sum, Carry as outputs can be tabulated as follows.</p>
-                        
-                        <div class="box">
-                            <div class="image-box">
-                            <img src="./img/e2/fig02.png" alt="NP">
-                                <p>Figure 2. Block diagram of half adder</p>
+                    <h3 id="Half">1)Half Adder</h3>
+                        <p class="sm-para">Half adder is a combinational circuit that performs simple addition of two binary numbers. If we assume A and B as the two bits whose addition is to be performed,the block diagram and a truth table for half adder with A, B as inputs and Sum, Carry as outputs can be tabulated as follows.</p>
+                        <div class="image-mul-box">
+                            <div class="image-center">
+                                <div class="image-box">
+                                    <img src="./img/e2/fig02.png" alt="NP">
+                                </div>
+                                    <div class="image-box">
+                                    <img src="./img/e2/fig03.png" alt="NP">
+                                </div>
                             </div>
-                            <div class="image-box">
-                                <img src="./img/e2/fig03.png" alt="NP">
-                                <p>Figure 3: Truth table of half adder</p>
-                            </div>
+                            <p>Figure 2. Block diagram and Truth table of half adder</p>
+                            <p>Sum = A B' + A' B</p>
                         </div>
-                        <p>The sum output of the binary addition carried out above is similar to that of an Ex-OR operation while the carry output is similar to that of an AND operation. The same can be verified with help of Karnaugh Map.</p>
-                        <p>The truth table and K Map simplification and logic diagram for sum output is shown below.</p>
+                        <p class="sm-para">The sum output of the binary addition carried out above is similar to that of an Ex-OR operation while the carry output is similar to that of an AND operation. The same can be verified with help of Karnaugh Map.<br><br>The truth table and K Map simplification and logic diagram for sum output is shown below.</p>
                         <div class="image-mul-box">
                             <div class="image-center">
                                 <div class="image-box">
                                     <img src="./img/e2/fig04.png" alt="NP">
-                                    </div>
+                                </div>
                                     <div class="image-box">
                                     <img src="./img/e2/fig05.png" alt="NP">
-                                    </div>
+                                </div>
                                     <div class="image-box">
-                                        <img src="./img/e2/fig06.png" alt="NP">
-                                    </div>
+                                    <img src="./img/e2/fig06.png" alt="NP">
+                                </div>
                             </div>
                             <p>Figure 3. Truth table, K Map simplification and Logic diagram for sum output of half adder</p>
                             <p>Sum = A B' + A' B</p>
+                        </div>
+                        <p class="sm-para">The truth table and K Map simplification and logic diagram for carry is shown below.</p>
+                        <div class="image-mul-box">
+                            <div class="image-center">
+                                <div class="image-box">
+                                    <img src="./img/e2/fig07.png" alt="NP">
+                                </div>
+                                <div class="image-box">
+                                    <img src="./img/e2/fig08.png" alt="NP">
+                                </div>
+                                <div class="image-box">
+                                   <img src="./img/e2/fig09.png" alt="NP">
+                                </div>
+                            </div>
+                            <p>Figure 4. Truth table, K Map simplification and Logic diagram for sum output of half adder</p>
+                            <p>Carry = AB</p>
+                        </div>
+                        <div class="box">
+                            <p class="sm-para">If A and B are binary inputs to the half adder, then the logic function to calculate sum S is Ex – OR of A and B and logic function to calculate carry C is AND of A and B. Combining these two, the logical circuit to implement the combinational circuit of half adder is shown below.</p>
+                            <div class="image-box">
+                                <img src="./img/e2/fig10.png" alt="NP">
+                                <p>Figure 5. Half Adder Logic Diagram</p>
+                            </div>
+                        </div>
+                        <p class="sm-para">As we know that NAND and NOR are called universal gates as any logic system can be implemented using these two, the half adder circuit can also be implemented using them. We know that a half adder circuit has one Ex – OR gate and one AND gate.</p><br>
+                        <h4>1.1)Half Adder using NAND gates</h4>
+                        <div class="box">
+                            <p class="sm-para">Five NAND gates are required in order to design a half adder. The circuit to realize half adder using NAND gates is shown below.</p>
+                            <div class="image-box big-img">
+                                <img src="./img/e2/fig11.png" alt="NP">
+                                <p>Figure 6. Realization of half adder using NAND gates</p>
+                            </div>
+                        </div><br>
+                        <h4>1.2)Half Adder using NOR gates</h4>
+                        <div class="box">
+                            <p class="sm-para">Five NOR gates are required in order to design a half adder. The circuit to realize half adder using NOR gates is shown below.</p>
+                            <div class="image-box big-img">
+                                <img src="./img/e2/fig12.png" alt="NP">
+                                <p>Figure 7. Realization of half adder using NOR Gates</p>
+                            </div>
+                        </div>
+                    <h3 id="Full">2)Full Adder</h3>
+                        <p class="sm-para">Full adder is a digital circuit used to calculate the sum of three binary bits. Full adders are complex and difficult to implement when compared to half adders. Two of the three bits are same as before which are A, the augend bit and B, the addend bit. The additional third bit is carry bit from the previous stage and is called 'Carry' – in generally represented by CIN. It calculates the sum of three bits along with the carry. The output carry is called Carry – out and is represented by Carry OUT.<br>The block diagram of a full adder with A, B and CIN as inputs and S, Carry OUT as outputs is shown below.</p>
+                        <div class="image-mul-box">
+                            <div class="image-center">
+                                <div class="image-box">
+                                    <img src="./img/e2/fig13.png" alt="NP">
+                                </div>
+                                <div class="image-box">
+                                   <img src="./img/e2/fig14.png" alt="NP">
+                                </div>
+                            </div>
+                            <p>Figure 8. Full Adder Block Diagram and Truth Table</p>
+                        </div>
+                        <div class="box">
+                            <p class="sm-para">Based on the truth table, the Boolean functions for Sum (S) and Carry – out (COUT) can be derived using K – Map.</p>
+                            <div class="image-box">
+                                <img src="./img/e2/fig15.png" alt="NP">
+                                <p>Figure 9. Full Adder Logic Diagram</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image-box">
+                            <img src="./img/e2/fig16.png" alt="NP">
+                                <p>Figure 10. The K-Map simplified equation for sum is S = A'B'Cin + A'BCin' + ABCin</p>
+                            </div>
+                            <div class="image-box">
+                                <img src="./img/e2/fig17.png" alt="NP">
+                                <p>Figure 11. The K-Map simplified equation for COUT is COUT = AB + ACIN + BCIN</p>
+                            </div>
+                        </div>
+                        <p class="sm-para">In order to implement a combinational circuit for full adder, it is clear from the equations derived above, that we need four 3-input AND gates and one 4-input OR gates for Sum and three 2-input AND gates and one 3-input OR gate for Carry – out.</p><br>
+                        <h4>2.1)Full Adder using NAND gates</h4>
+                        <div class="box">
+                            <p class="sm-para">As mentioned earlier, a NAND gate is one of the universal gates and can be used to implement any logic design. The circuit of full adder using only NAND gates is shown below.</p>
+                            <div class="image-box big-img">
+                                <img src="./img/e2/fig18.png" alt="NP">
+                                <p>Figure 12. Full Adder using NAND gates</p>
+                            </div>
+                        </div><br>
+                        <h4>2.2)Full Adder using NOR gates</h4>
+                        <div class="box">
+                            <p class="sm-para">As mentioned earlier, a NOR gate is one of the universal gates and can be used to implement any logic design. The circuit of full adder using only NOR gates is shown below</p>
+                            <div class="image-box big-img">
+                                <img src="./img/e2/fig19.png" alt="NP">
+                                <p>Figure 13. Full Adder using NOR gates</p>
+                            </div>
                         </div>
 
 

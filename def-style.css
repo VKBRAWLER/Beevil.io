@@ -11,6 +11,10 @@
     font-family: open-sans;
     src: url(./fonts/open-sans/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: open-sans-bold;
+    src: url(./fonts/open-sans/OpenSans-Bold.ttf);
+}
 :root{
     font-size: 10px;
     scroll-behavior: smooth;

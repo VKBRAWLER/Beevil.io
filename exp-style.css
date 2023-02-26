@@ -65,13 +65,18 @@
     height: fit-content;
     margin: 9px;
     }
+    .big-img{
+        width: 400px;
+    }
     .image-box img{
     width: inherit;
-    max-width: inherit;
     }
     .image-mul-box{
         text-align: center;
         font-size: 18px;
+        font-family: open-sans-bold;
+        text-decoration: underline;
+        margin-bottom: 10px;
     }
     .image-center{
         display: flex;
@@ -118,36 +123,62 @@
     border-radius: 50px;
     text-align: center;
     }
-    @media screen and (max-width: 768px) {
-        .box{
-        flex-wrap: wrap;
-        }
-        .image-box{
-        width: 300px;
-        font-size: 13px;
-        }
-        .image-mul-box{
-        font-size: 13px;
-        }
+@media screen and (max-width: 1024px){
+    .content{
+        grid-template-columns: auto;
+        margin: 20px;
     }
-    @media screen and (max-width: 1024px) {
-        .content{
-            grid-template-columns: auto;
-            margin: 20px;
+    .navigation{
+        display: none;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    .sm-para{
+        font-size: 20px;
+    }
+    section h2{
+        font-size: 10vw;
         }
-        .navigation{
-            display: none;
-        }
-        h1{
-            font-size: 5vw;
-        }
-        main{
-            font-size: 2.8vw;
-        }
-        section h2{
-            font-size: 10vw;
-            }
         .sim-box{
             font-size: 25px;
-        }
     }
+}
+@media screen and (max-width: 768px) {
+    .box{
+    flex-wrap: wrap;
+    }
+    .sm-para{
+        font-size: 13px;
+    }
+    .image-box{
+    width: 300px;
+    font-size: 13px;
+    }
+    .big-img{
+        width: 400px;
+    }
+    .image-mul-box{
+    font-size: 13px;
+    }
+    .sim li{
+    margin: 10px 0;
+    font-size: 15px;
+    }
+    .icon{
+        height: 25px;
+        }
+    h1{
+        font-size: 22px;
+    }
+    section h2{
+    font-size: 40px;
+    }
+    section h3{
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    section h4{
+        font-size: 17px;
+    }
+}
